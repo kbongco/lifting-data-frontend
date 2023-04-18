@@ -3,6 +3,9 @@ import { getBench } from "../services/getBench";
 import { getDeadlift } from "../services/getDeadlift";
 import React, { useState, useEffect } from "react";
 import Deadlifts from "../Components/Deadlifts";
+import Squats from "../Components/Squats";
+import Bench from "../Components/Bench";
+
 
 export default function MainContainer(props) {
   const [squats, updateSquats] = useState([]);
@@ -45,7 +48,9 @@ export default function MainContainer(props) {
   return (
     <><h1>Chibi's Adelante winter heat 2022 meet prep singles</h1>
     <section>
-        <Deadlifts deadlift={deadlift}/>
+        <Squats squats={squats} />
+        <Bench bench={bench} />
+        <Deadlifts deadlift={deadlift} />
     </section>
     </>
   )

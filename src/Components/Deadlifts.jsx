@@ -14,14 +14,14 @@ const { deadlift } = props;
     datasets: [
       {
         label: 'Deadlift singles for Adelante Winter heat 2022',
-        backgroundColor: "rgb(255, 99, 132)",
-        borderColor: "rgb(255, 99, 132)",
+        backgroundColor: 'rgba(75,192,192,0.4)',
+        borderColor: 'rgba(75,192,192,1)',
         data: weightLifted,
       }
     ]
   }
 
-  console.log(data);
+ 
   return (
     <>
     <h1>Deadlifts</h1>
