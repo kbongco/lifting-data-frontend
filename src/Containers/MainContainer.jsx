@@ -2,6 +2,7 @@ import { getSquats } from "../services/getSquats";
 import { getBench } from "../services/getBench";
 import { getDeadlift } from "../services/getDeadlift";
 import React, { useState, useEffect } from "react";
+import Deadlifts from "../Components/Deadlifts";
 
 export default function MainContainer(props) {
   const [squats, updateSquats] = useState([]);
@@ -31,7 +32,6 @@ export default function MainContainer(props) {
       try {
       const deadlift = await getDeadlift();
       updateDeadlift(deadlift);
-      console.log(deadlift)
         } catch (error) {
           console.log(`You bombed out of deadlifts with a ${error}`)
         }
@@ -43,6 +43,10 @@ export default function MainContainer(props) {
   
 
   return (
-    <h1>Hi</h1>
+    <><h1>Chibi's Adelante winter heat 2022 meet prep singles</h1>
+    <section>
+        <Deadlifts deadlift={deadlift}/>
+    </section>
+    </>
   )
 }
