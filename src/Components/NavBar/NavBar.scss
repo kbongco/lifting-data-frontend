@@ -4,10 +4,20 @@
   font-size: 1.3rem;
   margin: 16px;
   margin-left: 0;
-  border-bottom: 1px black solid;
+  padding-left: 16px;
 
   .lifting-nav-link {
     text-decoration: none;
+    color: #1f86Fb;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      text-decoration: underline;
+      color: blue;
+    }
 
     .lifting-nav-link-about {
       padding-left: 8px;
