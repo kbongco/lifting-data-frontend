@@ -6,10 +6,9 @@ import Deadlifts from "../Components/Deadlifts";
 import Squats from "../Components/Squats";
 import Bench from "../Components/Bench";
 import NavBar from "../Components/NavBar/NavBar";
-import { Route, Switch } from "react-router-dom";
 
 
-export default function MainContainer(props) {
+export default function MainContainer() {
   const [squats, updateSquats] = useState([]);
   const [bench, updateBench] = useState([]);
   const [deadlift, updateDeadlift] = useState([]);
@@ -55,7 +54,7 @@ export default function MainContainer(props) {
         <Squats squats={squats} />
         <Bench bench={bench} />
         <Deadlifts deadlift={deadlift} />
-    </section>
+      </section>
     </>
   )
 }

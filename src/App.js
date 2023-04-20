@@ -1,12 +1,14 @@
-import logo from './logo.svg';
 import './App.scss';
 import MainContainer from './Containers/MainContainer';
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
-      <MainContainer/>
+      <MainContainer />
+      <Footer/>
     </div>
+    
   );
 }
 

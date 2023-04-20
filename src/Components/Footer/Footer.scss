@@ -1,0 +1,47 @@
+.lifting-footer {
+  background-color: #2674A0;
+  height: 8vh;
+  margin-top: 40px;
+
+  .lifting-footer-text {
+    color: white;
+    display:flex;
+    justify-content: space-between;
+
+    .lifting-footer-general-information {
+      padding-left: 8px;
+    }
+
+    .lifting-footer-portfolio-link {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:visited {
+        color: #B3EFFF;
+      }
+    }
+  }
+
+  .lifting-footer-social-information {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    .lifting-linkedIn-icon-container, .lifting-github-icon-container {
+      padding: 16px;
+      text-decoration: none;
+
+      .lifting-linkedIn-link, .lifting-github-link {
+        color: white;
+
+        &:visited {
+          color: #B3EFFF;
+        }
+      }
+    }
+  }
+}
