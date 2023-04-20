@@ -1,0 +1,10 @@
+.lifting-under-construction-container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+  margin-left: 8px;
+
+  .lifting-construction-pic {
+    height: 250px;
+  }
+}
