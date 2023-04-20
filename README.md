@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+## Fourth Meet Prep Data Display and Analysis 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Overview 
 
-## Available Scripts
+This is a project I created displaying the singles that I took leading up to my powerlifting meet December 2022. Its a mini "data analysis" project as well as a full stack project. 
 
-In the project directory, you can run:
+I did this as a new portfolio project as a way to show off my skills and what I enjoy and love to do outside of being a developer. A lot of my projects have been front end related, and it has been a while since I have done a full stack project and I came up with this idea one day while trying to figure out what to do with some old training videos. 
 
-### `npm start`
+### Technologies used 
+1. Front End: React JS, SCSS, Chart.js 
+2. Back End: Ruby, Ruby on Rails
+   1. To see the backend code, it is on this repository: https://github.com/kbongco/Chibi4thMeetProgress
+3. Backend Deployment: TBD 
+4. Frontend deployment: TBD
+5. Link to view page: Not yet deployed! 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### File Structure
+```
+src
+|__Components
+    |__Footer
+    |__NavBar
+    |__Bench
+    |__Squat
+    |__Deadlift
+|__Containers
+|__Services
+|__Views
+  |__About
+  |__Home
+  |__UnderConstruction
+```
+   
+### MVP (Minimum Viable Product)
+- As someone viewing this page, I should be able to see graphs detailing the progress on the squat, bench, deadlift
+- As someone viewing this app, I should be able to see a summary detailing the lifts 
+- As someone viewing this app, I should find a "under construction page" to indicate that the page is underconstruction if the link is not ready 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Future Enhancements 
+- A reusable table component 
+- Convert from Chart.js to D3.js
+- Clean up Squat, Bench, Deadlift graphs to be more reusable instead of duplicated 

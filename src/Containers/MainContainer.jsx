@@ -5,6 +5,10 @@ import React, { useState, useEffect } from "react";
 import Deadlifts from "../Components/Deadlifts";
 import Squats from "../Components/Squats";
 import Bench from "../Components/Bench";
+import About from '../Views/About/About';
+import Home from '../Views/Home/Home';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import UnderConstruction from "../Views/UnderConstruction/UnderConstruction";
 
 
 export default function MainContainer() {
@@ -47,11 +51,17 @@ export default function MainContainer() {
 
   return (
     <>
-      <h1>Chibi's Adelante winter heat 2022 meet prep singles</h1>
-    <section>
-        <Squats squats={squats} />
+      {/* <h1>Chibi's Adelante winter heat 2022 meet prep singles</h1> */}
+      <section>
+        <Routes>
+          <Route path='/' element={<Home/>} exact/>
+          <Route path="/about" element={<About />} exact />
+          <Route path="/squats" element={<Squats squats={squats} />} exact />
+          <Route path='/meet-results' element={<UnderConstruction/>} exact /> 
+        {/* <Squats squats={squats} />
         <Bench bench={bench} />
-        <Deadlifts deadlift={deadlift} />
+          <Deadlifts deadlift={deadlift} /> */}
+        </Routes>
       </section>
     </>
   )
