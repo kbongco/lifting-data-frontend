@@ -1,7 +1,9 @@
 .lifting-footer {
   background-color: #1C304A;
-  height: 8vh;
-  margin-top: 40px;
+  height: 10vh;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 
   .lifting-footer-text {
     color: white;

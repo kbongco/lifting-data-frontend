@@ -2,7 +2,7 @@
   display: flex;
   background-color: #1C304A;
   justify-content: space-between;
-  font-size: 1.3rem;
+  font-size: 0.8rem;
   height: 8vh;
   padding-right: 16px;
   padding-left: 16px;
@@ -19,11 +19,19 @@
 
     &:active {
       text-decoration: underline;
-      color: blue;
+      color: white;
     }
 
     .lifting-nav-link-about {
       padding-left: 8px;
+    }
+  }
+
+  @media(min-width: 768px) {
+
+    .lifting-nav-link {
+      align-items: end;
+      font-size:1.3rem;
     }
   }
 }

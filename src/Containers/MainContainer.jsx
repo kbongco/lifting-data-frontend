@@ -5,6 +5,8 @@ import React, { useState, useEffect } from "react";
 import Deadlifts from "../Components/Deadlifts";
 import Squats from "../Components/Squats";
 import Bench from "../Components/Bench";
+import About from '../Views/About/About';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 export default function MainContainer() {
@@ -48,10 +50,13 @@ export default function MainContainer() {
   return (
     <>
       <h1>Chibi's Adelante winter heat 2022 meet prep singles</h1>
-    <section>
-        <Squats squats={squats} />
+      <section>
+        <Routes>
+        <Route path="/about" element={ <About /> }exact/>
+        {/* <Squats squats={squats} />
         <Bench bench={bench} />
-        <Deadlifts deadlift={deadlift} />
+          <Deadlifts deadlift={deadlift} /> */}
+          </Routes>
       </section>
     </>
   )
