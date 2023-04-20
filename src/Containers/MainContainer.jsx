@@ -5,7 +5,6 @@ import React, { useState, useEffect } from "react";
 import Deadlifts from "../Components/Deadlifts";
 import Squats from "../Components/Squats";
 import Bench from "../Components/Bench";
-import NavBar from "../Components/NavBar/NavBar";
 
 
 export default function MainContainer() {
@@ -48,7 +47,6 @@ export default function MainContainer() {
 
   return (
     <>
-      <NavBar />
       <h1>Chibi's Adelante winter heat 2022 meet prep singles</h1>
     <section>
         <Squats squats={squats} />

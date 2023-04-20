@@ -1,5 +1,5 @@
 .lifting-footer {
-  background-color: #2674A0;
+  background-color: #1C304A;
   height: 8vh;
   margin-top: 40px;
 
@@ -21,7 +21,7 @@
       }
 
       &:visited {
-        color: #B3EFFF;
+        color: #00CFFF
       }
     }
   }
@@ -39,7 +39,20 @@
         color: white;
 
         &:visited {
-          color: #B3EFFF;
+          color: #00CFFF;
+        }
+
+        &:hover {
+          animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
         }
       }
     }
