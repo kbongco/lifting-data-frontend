@@ -1,0 +1,60 @@
+.lifting-footer {
+  background-color: #1C304A;
+  height: 8vh;
+  margin-top: 40px;
+
+  .lifting-footer-text {
+    color: white;
+    display:flex;
+    justify-content: space-between;
+
+    .lifting-footer-general-information {
+      padding-left: 8px;
+    }
+
+    .lifting-footer-portfolio-link {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:visited {
+        color: #00CFFF
+      }
+    }
+  }
+
+  .lifting-footer-social-information {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    .lifting-linkedIn-icon-container, .lifting-github-icon-container {
+      padding: 16px;
+      text-decoration: none;
+
+      .lifting-linkedIn-link, .lifting-github-link {
+        color: white;
+
+        &:visited {
+          color: #00CFFF;
+        }
+
+        &:hover {
+          animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+  }
+}

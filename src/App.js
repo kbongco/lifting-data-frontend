@@ -1,12 +1,16 @@
-import logo from './logo.svg';
 import './App.scss';
 import MainContainer from './Containers/MainContainer';
+import Footer from "./Components/Footer/Footer";
+import NavBar from "./Components/NavBar/NavBar";
 
 function App() {
   return (
     <div className="App">
-      <MainContainer/>
+      <NavBar />
+      <MainContainer />
+      <Footer/>
     </div>
+    
   );
 }
 
