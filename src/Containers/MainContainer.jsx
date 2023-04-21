@@ -51,16 +51,14 @@ export default function MainContainer() {
 
   return (
     <>
-      {/* <h1>Chibi's Adelante winter heat 2022 meet prep singles</h1> */}
       <section>
         <Routes>
           <Route path='/' element={<Home/>} exact/>
           <Route path="/about" element={<About />} exact />
           <Route path="/squats" element={<Squats squats={squats} />} exact />
+          <Route path="/bench" element={<Bench bench={bench} />} exact />
+          <Route path="/deadlifts" element={<Deadlifts deadlift={deadlift} /> } exact />
           <Route path='/meet-results' element={<UnderConstruction/>} exact /> 
-        {/* <Squats squats={squats} />
-        <Bench bench={bench} />
-          <Deadlifts deadlift={deadlift} /> */}
         </Routes>
       </section>
     </>
