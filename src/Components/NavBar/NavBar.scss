@@ -1,15 +1,17 @@
+@import '../../utils/variables.scss';
+
 .lifting-navbar {
   display: flex;
-  background-color: #1C304A;
+  background-color: $dark-blue;
   justify-content: space-between;
   font-size: 0.8rem;
   height: 8vh;
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: $padding * 2;
+  padding-left: $padding * 2;
 
   .lifting-nav-link {
     text-decoration: none;
-    color: #B3EFFF;
+    color: $light-blue;
     align-items: center;
     display: flex;
 
@@ -19,15 +21,15 @@
 
     &:active {
       text-decoration: underline;
-      color: white;
+      color: $white;
     }
 
     .lifting-nav-link-about {
-      padding-left: 8px;
+      padding-left: $padding;
     }
   }
 
-  @media(min-width: 768px) {
+  @media(min-width: $tablet-view) {
 
     .lifting-nav-link {
       align-items: end;
