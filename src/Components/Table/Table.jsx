@@ -4,21 +4,29 @@ import TableRowItems from './TableBody'
 import './Table.scss'
 
 
-const Table = ({ tHeadInfo, tBodyInfo, customClassHere }) => {
+const Table = ({ tHeadInfo, tBodyInfo, customClassHere, rowSpan }) => {
   console.log(tBodyInfo);
   return (
     <table className={customClassHere}>
       <thead className='chbi-table-component-header'>
-        <th className='chbi-table-component-header-item'>
+        <tr>
+        <th className='chbi-table-component-header-item' colspan='2'>
           {tHeadInfo}
-        </th>
+          </th>
+        </tr>
       </thead>
       <tbody>
         <tr>
-          <p>'Just testing'</p>
+          <td>
+            <p>Testing</p>
+          </td>
+          <td>
+            <p>Testing</p>
+          </td>
         </tr>
-        <tr><p>
-        Another test</p></tr>
+        <tr>
+          <td><p>Test2</p></td>
+        </tr>
 
       </tbody>
       <tbody>
