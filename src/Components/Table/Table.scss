@@ -1,3 +1,5 @@
+@import '../../utils/variables.scss';
+
 .chbi-table-component-header {
   background-color: pink;
 }
@@ -8,12 +10,12 @@
   }
 }
 
-@media(min-width:320px){
+@media(min-width:$mobile-view){
   .chbi-table-component {
     width: 100vw;
 
     .chbi-table-component-data-point {
-      padding: 8px;
+      padding: $padding;
     }
   }
   
