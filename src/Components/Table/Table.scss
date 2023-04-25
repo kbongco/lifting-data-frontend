@@ -1,0 +1,20 @@
+.chbi-table-component-header {
+  background-color: pink;
+}
+
+.chbi-table-component {
+  .chbi-table-component-data-point{
+    text-align: center;
+  }
+}
+
+@media(min-width:320px){
+  .chbi-table-component {
+    width: 100vw;
+
+    .chbi-table-component-data-point {
+      padding: 8px;
+    }
+  }
+  
+}

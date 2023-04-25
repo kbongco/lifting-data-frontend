@@ -27,7 +27,10 @@ const { deadlift } = props;
     <h1>Deadlifts</h1>
     <section>
         <Line data={data}/>
-    </section> 
+      </section> 
+      <article>
+        <h1>What is this data?</h1>
+        </article>
     </>
   )
 }

@@ -1,12 +1,16 @@
 import { Chart as ChartJS, registerables } from 'chart.js';
 import { Line } from 'react-chartjs-2'
+// import { Table } from './Table/Table' 
+import Table from './Table/Table'
 ChartJS.register(...registerables);
 
 export default function Squats(props) {
-  const { squats } = props;
+  const { squats, basicInfo } = props;
+  const tHeadInfo = 'Squats';
+
 
   const weightLifted = squats?.map((weights) => weights.weight);
-  const weeksOut = squats?.map((weeks) => weeks.weeksOut);
+  const weeksOut = squats?.map((weeks) => weeks?.weeksOut);
 
   const data = {
     labels: weeksOut,
@@ -27,6 +31,9 @@ export default function Squats(props) {
     <section>
     <Line data={data}/>
       </section> 
+      <section>
+        <Table tHeadInfo={tHeadInfo} tBodyInfo={squats} tHeaderCol={basicInfo} />
+      </section>
     </>
   )
 }

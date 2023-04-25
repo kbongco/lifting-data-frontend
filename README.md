@@ -33,6 +33,7 @@ src
    
 ### MVP (Minimum Viable Product)
 - As someone viewing this page, I should be able to see graphs detailing the progress on the squat, bench, deadlift
+- As someone viewing this app, I should be able to see a detailed table showing the numbers on the graph 
 - As someone viewing this app, I should be able to see a summary detailing the lifts 
 - As someone viewing this app, I should find a "under construction page" to indicate that the page is underconstruction if the link is not ready 
 
