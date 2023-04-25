@@ -1,3 +1,9 @@
 .chbi-table-component-header {
   background-color: pink;
 }
+
+@media(min-width:320px){
+  .chbi-table-component {
+    width: 100vw;
+  }
+}

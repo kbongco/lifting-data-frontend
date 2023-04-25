@@ -7,6 +7,9 @@ ChartJS.register(...registerables);
 export default function Squats(props) {
   const { squats } = props;
   const tHeadInfo = 'Squats';
+  const tHeaderCol = 'Weeks Out';
+  const tHeaderCol2 = 'Weight lifted'
+
 
   const weightLifted = squats?.map((weights) => weights.weight);
   const weeksOut = squats?.map((weeks) => weeks?.weeksOut);
@@ -30,7 +33,9 @@ export default function Squats(props) {
     <section>
     <Line data={data}/>
       </section> 
-      <Table tHeadInfo={tHeadInfo} tBodyInfo={weeksOut} />
+      <section>
+        <Table tHeadInfo={tHeadInfo} tBodyInfo={squats} tHeaderCol={tHeaderCol} tHeaderCol2={tHeaderCol2} />
+      </section>
     </>
   )
 }
