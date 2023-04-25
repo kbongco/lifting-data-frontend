@@ -5,10 +5,8 @@ import Table from './Table/Table'
 ChartJS.register(...registerables);
 
 export default function Squats(props) {
-  const { squats } = props;
+  const { squats, basicInfo } = props;
   const tHeadInfo = 'Squats';
-  const tHeaderCol = 'Weeks Out';
-  const tHeaderCol2 = 'Weight lifted'
 
 
   const weightLifted = squats?.map((weights) => weights.weight);
@@ -34,7 +32,7 @@ export default function Squats(props) {
     <Line data={data}/>
       </section> 
       <section>
-        <Table tHeadInfo={tHeadInfo} tBodyInfo={squats} tHeaderCol={tHeaderCol} tHeaderCol2={tHeaderCol2} />
+        <Table tHeadInfo={tHeadInfo} tBodyInfo={squats} tHeaderCol={basicInfo} />
       </section>
     </>
   )

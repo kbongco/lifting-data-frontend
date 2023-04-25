@@ -5,7 +5,7 @@ import './Table.scss'
 
 
 const Table = ({ tHeadInfo, tBodyInfo,
- customClassHere, tHeaderCol, tHeaderCol2,  rowSpan }) =>
+ customClassHere, tHeaderCol, rowSpan }) =>
 {
   return (
     <table className='chbi-table-component'>
@@ -18,16 +18,13 @@ const Table = ({ tHeadInfo, tBodyInfo,
       </thead>
       <tbody>
         <tr>
-          <td>
-           {tHeaderCol}
-          </td>
-          <td>
-            {tHeaderCol2}
-          </td>
+          {tHeaderCol.map((x) => (
+            <td className='chbi-table-component-data-point'>{x}</td>
+          ))}
         </tr>
         {tBodyInfo.map((item) => (
           <tr>{item.weeksOut}
-            <td>{item.weight}</td></tr>
+            <td className='chbi-table-component-data-point'>{item.weight}</td></tr>
         ))}
       </tbody>
     </table>
