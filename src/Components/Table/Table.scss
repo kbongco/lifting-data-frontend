@@ -4,6 +4,14 @@
   background-color: pink;
 }
 
+table {
+  border-collapse: collapse;
+  color: $font-color;
+}
+table tr td {
+  border: 1px solid gray;
+}
+
 .chbi-table-component {
   .chbi-table-component-data-point{
     text-align: center;
