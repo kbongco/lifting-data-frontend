@@ -1,21 +1,23 @@
+@import '../../utils/variables.scss';
+
 .lifting-footer {
-  background-color: #1C304A;
+  background-color: $dark-blue;
   height: 10vh;
   position: relative;
   bottom: 0;
   width: 100%;
 
   .lifting-footer-text {
-    color: white;
+    color: $white;
     display:flex;
     justify-content: space-between;
 
     .lifting-footer-general-information {
-      padding-left: 8px;
+      padding-left: $padding;
     }
 
     .lifting-footer-portfolio-link {
-      color: white;
+      color: $white; 
       text-decoration: none;
 
       &:hover {
@@ -23,7 +25,7 @@
       }
 
       &:visited {
-        color: #00CFFF
+        color: $secondary-light-blue;
       }
     }
   }
@@ -34,14 +36,14 @@
     align-items: center;
 
     .lifting-linkedIn-icon-container, .lifting-github-icon-container {
-      padding: 16px;
+      padding: $padding * 2;
       text-decoration: none;
 
       .lifting-linkedIn-link, .lifting-github-link {
-        color: white;
+        color: $white;
 
         &:visited {
-          color: #00CFFF;
+          color: $secondary-light-blue;
         }
 
         &:hover {

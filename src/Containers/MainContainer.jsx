@@ -15,7 +15,7 @@ export default function MainContainer() {
   const [squats, updateSquats] = useState([]);
   const [bench, updateBench] = useState([]);
   const [deadlift, updateDeadlift] = useState([]);
-  const basicInfo = ['Weight Lifted', 'weeksOut'];
+  const basicInfo = ['Weeks Out', 'Weight Lifted'];
 
   useEffect(() => {
     const fetchSquats = async () => {

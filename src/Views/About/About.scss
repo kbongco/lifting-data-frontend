@@ -1,5 +1,7 @@
+@import '../../utils/variables.scss';
+
 .lifting-about-me-questions {
   text-align: left;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: $margins;
+  margin-right: $margins;
 }
