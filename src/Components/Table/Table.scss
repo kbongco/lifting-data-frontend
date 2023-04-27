@@ -1,12 +1,11 @@
 @import '../../utils/variables.scss';
 
-.chbi-table-component-header {
-  background-color: pink;
-}
+
 
 table {
   border-collapse: collapse;
   color: $font-color;
+  margin-top: $margins * 4;
 }
 table tr td {
   border: 1px solid gray;

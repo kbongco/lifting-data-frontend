@@ -1,6 +1,5 @@
 import { Chart as ChartJS, registerables } from 'chart.js';
 import { Line } from 'react-chartjs-2'
-// import { Table } from './Table/Table' 
 import Table from './Table/Table'
 ChartJS.register(...registerables);
 

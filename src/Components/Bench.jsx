@@ -1,9 +1,11 @@
 import { Chart as ChartJS, registerables } from 'chart.js';
 import { Line } from 'react-chartjs-2'
+import Table from './Table/Table'
 ChartJS.register(...registerables);
 
 export default function Squats(props) {
-  const { bench } = props;
+  const { bench, basicInfo } = props;
+  const tHeadInfo = 'Bench';
 
   const weightLifted = bench?.map((weights) => weights.weight);
   const weeksOut = bench?.map((weeks) => weeks.weeksOut);
@@ -27,6 +29,9 @@ export default function Squats(props) {
     <section>
     <Line data={data}/>
       </section> 
+      <section>
+      <Table tHeadInfo={tHeadInfo} tBodyInfo={bench} tHeaderCol={basicInfo} /> 
+      </section>
     </>
   )
 }

@@ -57,8 +57,8 @@ export default function MainContainer() {
           <Route path='/' element={<Home/>} exact/>
           <Route path="/about" element={<About />} exact />
           <Route path="/squats" element={<Squats squats={squats} basicInfo={basicInfo} />} exact />
-          <Route path="/bench" element={<Bench bench={bench} />} exact />
-          <Route path="/deadlifts" element={<Deadlifts deadlift={deadlift} /> } exact />
+          <Route path="/bench" element={<Bench basicInfo={basicInfo}bench={bench} />} exact />
+          <Route path="/deadlifts" element={<Deadlifts basicInfo={basicInfo} deadlift={deadlift} /> } exact />
           <Route path='/meet-results' element={<UnderConstruction/>} exact /> 
         </Routes>
       </section>
